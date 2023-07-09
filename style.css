@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(50, 52, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+body,
+#text {
+    font-family: "Gill Sans", "Gill Sans MT";
+}
+
+#hd {
+    position: absolute;
+    color: rgb(226, 183, 20);
+    top: 0rem;
+    left: 1rem;
+}
+
+#aaa {
+    text-align: center;
+    color: rgb(226, 183, 20);
+    font-size: 1.3rem;
+    margin-top: -2rem;
+}
+
+#abc {
+    text-align: center;
+    color: rgb(226, 183, 20);
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 4rem;
+}
+
+#data-box {
+    max-width: 90%;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#display {
+    width: inherit;
+    max-width: inherit;
+    margin-bottom: 1rem;
+    padding-left: calc(1.4rem);
+    padding-right: calc(1.4rem);
+    color: rgb(129, 131, 134);
+    font-size: 1.4rem;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.container {
+    background-color: rgb(226, 183, 20);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: inherit;
+    max-width: inherit;
+}
+
+#timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: rgb(226, 183, 20);
+    font-weight: bold;
+}
+
+#msg {
+    color : rgb(226, 183, 20);
+    display: none;
+}
+
+#text {
+    background-color: rgb(212, 200, 155);
+    border: 2px solid #a1922e;
+    outline: none;
+    width: 100%;
+    height: 9rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.34rem;
+    border-radius: 0.5rem;
+}
+
+#text:focus {
+    border-color: black;
+}
+
+#start {
+    margin-top: 1rem;
+    background-color: rgb(226, 183, 20);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#end {
+    margin-top: 1rem;
+    background-color: rgb(226, 183, 20);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 512px) {
+    /* Styles */
+    #hd {
+        font-size: 1rem;
+    }
+    #timer {
+        top: 4rem;
+        font-size: 2.3rem;
+    }
+    #aaa {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        font-size: 1rem;
+    }
+    #abc {
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+}
